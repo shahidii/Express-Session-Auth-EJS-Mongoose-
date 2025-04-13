@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernShop - Your Premium Shopping Destination</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('/api/placeholder/1920/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+        }
+        .category-card {
+            transition: transform 0.3s;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">ModernShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Deals</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-outline-dark me-2">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-dark me-2">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="btn btn-dark">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge bg-danger ms-1">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Summer Collection 2024</h1>
+            <p class="lead mb-4">Discover the latest trends and exclusive deals</p>
+            <a href="#" class="btn btn-light btn-lg px-4">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Shop by Category</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card category-card border-0 shadow-sm">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Fashion">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fashion</h5>
+                            <a href="#" class="btn btn-outline-dark">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card border-0 shadow-sm">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Electronics">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electronics</h5>
+                            <a href="#" class="btn btn-outline-dark">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card category-card border-0 shadow-sm">
+                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Home & Living">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Home & Living</h5>
+                            <a href="#" class="btn btn-outline-dark">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Products</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Watch</h5>
+                            <p class="card-text text-muted">$299.99</p>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Leather Bag</h5>
+                            <p class="card-text text-muted">$199.99</p>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Earbuds</h5>
+                            <p class="card-text text-muted">$149.99</p>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Watch</h5>
+                            <p class="card-text text-muted">$249.99</p>
+                            <button class="btn btn-dark w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon bg-dark text-white mx-auto mb-3 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-truck fa-2x"></i>
+                    </div>
+                    <h5>Free Shipping</h5>
+                    <p class="text-muted">On orders over $50</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon bg-dark text-white mx-auto mb-3 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-undo fa-2x"></i>
+                    </div>
+                    <h5>Easy Returns</h5>
+                    <p class="text-muted">30-day return policy</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon bg-dark text-white mx-auto mb-3 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-lock fa-2x"></i>
+                    </div>
+                    <h5>Secure Payment</h5>
+                    <p class="text-muted">100% secure checkout</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">Subscribe to Our Newsletter</h2>
+                    <p class="text-muted mb-4">Get the latest updates about new products and upcoming sales</p>
+                    <form class="d-flex justify-content-center gap-2">
+                        <input type="email" class="form-control form-control-lg w-50" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-dark btn-lg">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="mb-3">ModernShop</h5>
+                    <p class="text-muted">Your premium shopping destination for the latest trends in fashion, electronics, and home goods.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="mb-3">Shop</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#" class="text-decoration-none text-muted">New Arrivals</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Best Sellers</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Deals</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="mb-3">Support</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#" class="text-decoration-none text-muted">FAQ</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Shipping</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Returns</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Connect</h5>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <p class="text-muted">© 2024 ModernShop. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
